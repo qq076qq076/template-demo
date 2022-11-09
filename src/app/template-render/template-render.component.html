@@ -1,0 +1,7 @@
+<ng-container *ngFor="let item of tabList; let i = index">
+  <ng-container
+    *ngIf="template"
+    [ngTemplateOutlet]="template"
+    [ngTemplateOutletContext]="{ item: item, index: i }"
+  ></ng-container>
+</ng-container>
